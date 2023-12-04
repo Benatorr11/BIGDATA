@@ -3,9 +3,9 @@ from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
 # Configuración de la conexión a Cassandra
-cluster = Cluster(['localhost'])  # Reemplaza 'localhost' con la dirección de tu cluster de Cassandra
+cluster = Cluster(['localhost'])
 session = cluster.connect()
-session.set_keyspace('keyspace_practica')  # Reemplaza 'keyspace_practica' con el nombre de tu keyspace
+session.set_keyspace('keyspace_practica')
 
 # Cargar el conjunto de datos desde el archivo CSV
 df = pd.read_csv('books.csv', delimiter=';', nrows=100, encoding='latin-1')
