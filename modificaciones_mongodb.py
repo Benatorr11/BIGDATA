@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 # Conexión a MongoDB (asegúrate de tener el servidor MongoDB en ejecución)
 client = MongoClient('localhost', 27017)
-db = client['db_practica']  # Reemplaza con el nombre de tu base de datos
+db = client['db_practica']
 collection = db['libros']
 
 # Cargar el conjunto de datos desde el archivo CSV
